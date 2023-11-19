@@ -8,6 +8,7 @@ int main()
     char s;
     char login[256];
     char buffer[256];
+    //char *filename="passwdcopy";
     ptr=fopen( "passwdcopy", "r");
 
     printf("Введите ваш логин:");
@@ -37,7 +38,7 @@ int main()
     }
  
     k=strtok(k+1, ",");
-    printf("%s\n",k);
+    //printf("%s\n",k);
     printf("Имя вашего пользователя:%s\n",k);
     printf("_________________________\n");
     printf("Логин:%s\nИмя:%s\n",login,k);
